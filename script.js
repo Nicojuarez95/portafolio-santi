@@ -39,3 +39,14 @@ function efectoHabilidades(){
 window.onscroll = function(){
     efectoHabilidades();
 } 
+
+function enviarMensaje() {
+    var nombre = document.getElementById('nombre').value;
+    var telefono = document.getElementById('telefono').value;
+    var correo = document.getElementById('correo').value;
+    var mensaje = document.getElementById('mensaje').value;
+
+    var whatsappLink = 'https://wa.me/5493584494009?text=' + encodeURIComponent('Nombre: ' + nombre + '\nTeléfono: ' + telefono + '\nCorreo: ' + correo + '\nMensaje: ' + mensaje);
+
+    window.open(whatsappLink, '_blank');
+}

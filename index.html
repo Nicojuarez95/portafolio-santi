@@ -240,15 +240,12 @@
             <h2>CONTACTO</h2>
             <div class="fila">
                 <!-- Formulario -->
-                <div class="col">
-                    <input type="text" placeholder="Tú Nombre">
-                    <input type="text" placeholder="Número telefónico">
-                    <input type="text" placeholder="Dirección de correo">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                    <button>
-                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
-                        <span class="overlay"></span>
-                    </button>
+                <div class="col" id="miFormulario">
+                    <input type="text" id="nombre" placeholder="Tú Nombre">
+                    <input type="text" id="telefono" placeholder="Número telefónico">
+                    <input type="text" id="correo" placeholder="Dirección de correo">
+                    <textarea id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button type="button" onclick="enviarMensaje()">Enviar Mensaje<i class="fa-solid fa-paper-plane"></i></button>
                 </div>
                 <!-- Mapa -->
                 <div class="col">
